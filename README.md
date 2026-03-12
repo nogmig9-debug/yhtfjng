@@ -2,15 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Почему нейросеть не заменит учителя</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нейросети и учитель: аналитический обзор</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* Стили без изменений */
         body {
             font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             background: #0f172a;
@@ -18,6 +13,8 @@
             line-height: 1.6;
             overflow: hidden;
             height: 100vh;
+            margin: 0;
+            padding: 0;
         }
 
         .slider {
@@ -256,10 +253,52 @@
             background: #2d3a4f;
             border-color: #9ca3af;
         }
+
+        /* Стили для опроса */
+        .poll-container {
+            background: #1e293b;
+            border-radius: 30px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid #334155;
+            text-align: center;
+        }
+        .poll-question {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #ffffff;
+        }
+        .poll-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .poll-btn {
+            flex: 0 1 200px;
+            padding: 1rem 2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            background: #0f172a;
+            color: #e2e8f0;
+            border: 1px solid #4b5565;
+        }
+        .poll-btn:hover {
+            background: #2d3a4f;
+            border-color: #9ca3af;
+            transform: scale(1.02);
+        }
+        .poll-btn:active {
+            transform: scale(0.98);
+        }
     </style>
 </head>
 <body>
-
     <div class="dots" id="dots-container"></div>
     <div class="nav-arrows">
         <div class="nav-arrow" id="arrow-up">↑</div>
@@ -287,6 +326,9 @@
                 <p>Современные архитектуры (трансформеры, свёрточные сети) способны классифицировать изображения, генерировать тексты и даже вести диалог. Но вся их «мудрость» — это результат переработки данных, на которых их обучили. Нейросеть не имеет собственного опыта, эмоций, моральных принципов. Она действует в рамках заданного алгоритма и не способна выйти за пределы обучающей выборки.</p>
                 <p>Пример: GPT-4 может написать сочинение на тему добра, но не переживает добра, не чувствует ответственности за написанное. Это принципиальное ограничение, которое делает невозможной полноценную замену учителя.</p>
                 
+                <!-- Вставленное изображение chart (1).png -->
+                <img class="content-image" src="chart (1).png" alt="Диаграмма: отношение к нейросетям в образовании">
+
                 <div style="text-align: center;">
                     <a class="video-link" href="https://yandex.ru/video/preview/920911868037396964" target="_blank" rel="noopener noreferrer">
                         Смотреть видео: «Как работают нейросети» (Яндекс.Видео)
@@ -303,7 +345,8 @@
                 <h2>Настоящее образование — больше, чем информация</h2>
                 <p>Образование в школе — это не просто передача знаний (фактов, формул, дат). Это сложный процесс <span class="highlight">формирования личности</span>. Учитель не только объясняет теорему Пифагора, но и учит детей думать, сомневаться, задавать вопросы, взаимодействовать друг с другом, уважать чужое мнение.</p>
                 
-                <img class="content-image" src="https://i.yapx.ru/c98iN.jpg" alt="Учитель и ученики за работой">
+                <!-- Первое изображение (1.jpg) -->
+                <img class="content-image" src="1.jpg" alt="Учитель и ученики за работой">
 
                 <ul class="list">
                     <li><strong>Воспитание:</strong> привитие моральных ценностей, этических норм, патриотизма, уважения к старшим.</li>
@@ -345,7 +388,8 @@
                 </div>
                 <p>Сравнение показывает: у каждой стороны свои сильные стороны. Учитель незаменим в воспитании, мотивации, развитии личности. ИИ эффективен в рутинной передаче информации и тренировке навыков. Поэтому корректнее говорить не о замене, а о распределении ролей.</p>
                 
-                <img class="content-image" src="https://i.yapx.ru/c98uu.jpg" alt="Учитель и ученики в классе">
+                <!-- Второе изображение (3.jpg) -->
+                <img class="content-image" src="3.jpg" alt="Учитель и ученики в классе">
             </div>
         </section>
 
@@ -375,7 +419,8 @@
                 </div>
                 <p>Пример: нейросеть может подготовить для каждого ученика индивидуальные карточки с задачами, а учитель проведёт увлекательную дискуссию о применении этих знаний в жизни. Вместе они создают среду, где технологии усиливают человеческий потенциал, а не заменяют его.</p>
                 
-                <img class="content-image" src="https://i.yapx.ru/c98yX.jpg" alt="Учитель помогает ученикам">
+                <!-- Третье изображение (photo_2026-03-12_20-39-38.jpg) -->
+                <img class="content-image" src="photo_2026-03-12_20-39-38.jpg" alt="AI технологии в образовании">
             </div>
         </section>
 
@@ -389,6 +434,15 @@
                     <p style="font-size: 1.2rem; margin:0; color: #e2e8f0;">
                         <strong>Д.А. Иванченко считает что:</strong> Понимание возможностей и ограничений технологий искусственного интеллекта, использование критического подхода и навыков промт-инжиниринга, внедрение этических и правовых норм в деятельность образовательных организаций позволит снизить риски при внедрении нейросетевых технологий и использовать их потенциал более эффективно. Административно-управленческий персонал и педагоги должны быть готовы к осознанному и ответственному использованию новых технологий, соблюдая нормы и правила, регулирующие данную область.
                     </p>
+                </div>
+
+                <!-- Опрос на финальном слайде -->
+                <div class="poll-container">
+                    <div class="poll-question">Сможет ли по вашему мнению нейросеть заменить учителя?</div>
+                    <div class="poll-buttons">
+                        <button class="poll-btn" id="vote-yes">Да</button>
+                        <button class="poll-btn" id="vote-no">Нет</button>
+                    </div>
                 </div>
 
                 <p style="margin-top: 1rem;">Таким образом, будущее за разумным тандемом, где человек остаётся творцом, а нейросеть — его помощником.</p>
@@ -405,6 +459,7 @@
             const arrowUp = document.getElementById('arrow-up');
             const arrowDown = document.getElementById('arrow-down');
 
+            // Генерация точек
             slides.forEach((_, index) => {
                 const dot = document.createElement('div');
                 dot.classList.add('dot');
@@ -488,7 +543,19 @@
             window.addEventListener('resize', () => {
                 updateActiveDot();
             });
+
+            // Логика опроса
+            const voteYes = document.getElementById('vote-yes');
+            const voteNo = document.getElementById('vote-no');
+
+            function handleVote(answer) {
+                alert(`Спасибо за ваш голос! Вы выбрали: ${answer}`);
+                // Здесь можно добавить сохранение результатов (например, в localStorage или отправку на сервер)
+            }
+
+            voteYes.addEventListener('click', () => handleVote('Да'));
+            voteNo.addEventListener('click', () => handleVote('Нет'));
         })();
     </script>
 </body>
-</html>
+</html>>
